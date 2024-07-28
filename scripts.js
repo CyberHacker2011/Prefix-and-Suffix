@@ -1,7 +1,7 @@
 import { words } from "./words.js";
 function findWordsSuffix(words){
     let word = document.querySelector('.input-bar').value;
-    word=word.lower();
+    word=word.toLowerCase();
     let result = words.filter((some) => {
         if (some.endsWith(word)){
             return some;
@@ -12,7 +12,7 @@ function findWordsSuffix(words){
 }
 function findWordsPrefix(words){
     let word = document.querySelector('.input-bar').value;
-    word = word.lower();
+    word = word.toLowerCase();
     let result = words.filter((some) => {
         if (some.startsWith(word)){
             return some;
